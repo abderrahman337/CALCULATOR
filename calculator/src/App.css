@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.calculator{
+  display: grid;
+  width: 520px;
+  grid-gap : 5px;
+  align-items: center;
+  background-color: #616161;
+  padding: 10px ;
+}
+ .calculator_container{
+  display: flex;
+  justify-content: center;
+  padding:60px;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.calculator_inputs{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.calculator_outputs{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.calculator_digits{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.operators{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.calculator > div{
+  background-color: #e2d1d150;
+  text-align: center;
+  font-size: 24px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 2px solid #222;
+}
+.grid-item , .operators >div{
+  background-color: #61dafb;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+}
+.operators {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 2px solid black;
+}
+.operators > div{
+  background-color: aqua;
+}
+.calculator_inputs , .calculator_outputs{
+  color: #fff;
+  padding: 10px 0 ;
+  min-height: 32px;
+}
+
+
+.grid-item:hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: cornflowerblue;
+}
